@@ -1,0 +1,79 @@
+Create the barebones HTML structure for my four-page personal website:
+For the Home page, create a structure with my header at the top, a profile image underneath it that I can later center, and a place underneath the image for a centered introduction about myself.
+
+For the Hobbies page, keep the same header and navigation. Create three hobby sections. Each section should have an image followed by a title and description. I will later use CSS to position each image on the left side with its corresponding description on the right.
+
+For the Projects page, keep the same header and navigation and create space for at least three different projects. Each project should have a project name and a description. Keep the structure simple so I can style the projects myself later.
+
+For the Resume page, keep the same header and navigation and create a clean resume structure with sections for Education, Experience, Projects, and Skills. The resume should be designed so I can later style it as a centered vertical resume without a large profile image.
+
+Q1: I used ChatGPT - GPT-5.6 Sol
+Q2: my prompt is above
+Q3: I had AI give me a sugestion on what my remume mage should look like based off my current resume and and it gave me this 
+--------------------------------------------------
+                 Aidan Powell
+        Home | Hobbies | Projects | Resume
+--------------------------------------------------
+
+                     Resume
+
+   Education
+   University of Colorado Boulder
+   Computer Science
+   Expected Graduation: ...
+
+   --------------------------------------------
+
+   Experience
+   Clerel Property Management
+   Summer Assistant / Private Contractor
+
+   • Created digital floor plans...
+   • Organized property information...
+   • Coordinated with property managers...
+
+   --------------------------------------------
+
+   Projects
+   Apollo AI Assistant
+   • Built a desktop AI assistant using Python...
+   • Added application control and automation...
+
+   --------------------------------------------
+
+   Skills
+   Python | C++ | HTML | CSS | Git | GitHub
+
+   --------------------------------------------
+
+             [ Download Resume Button ]
+
+--------------------------------------------------
+                 GitHub / LinkedIn
+--------------------------------------------------
+
+Q4:evaluation
+
+What did the AI produce correctly?
+The AI produced the basic structure of my website correctly. It gave me the four pages I needed and helped create the general layout for my home, hobbies, projects, and resume pages.
+
+What part did you need to change?
+I needed to change parts of the layout because some of the original formatting did not work how I wanted. I also needed to change the hobbies and projects pages to use Bootstrap's responsive grid and change the navigation to a Bootstrap navbar.
+
+How did you verify that the code worked?
+I used Live Server to open the website in my browser. I clicked through all four pages, checked that the navigation worked, made sure my images loaded, and checked that the layout displayed correctly.
+
+Choose one line of generated code and explain it in your own words:
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #222222;
+    color: white;
+}
+The header selector tells the CSS that I want to style the header element. Everything inside the brackets controls how the header looks. text-align centers the content, padding adds space inside the header, background-color makes the background dark, and color makes the text white.
+
+Q5:revision
+I made a meaningful change by changing my original hobbies and projects layouts to use Bootstrap's responsive grid system. 
+I added Bootstrap rows and columns so that the images and descriptions are organized into columns on larger screens but can adjust on smaller screens. 
+I also changed the original navigation into a Bootstrap navbar that can collapse on smaller screens. 
+This changed how the website actually responds to different screen sizes instead of only changing the text or colors.

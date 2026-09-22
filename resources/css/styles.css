@@ -1,0 +1,197 @@
+/* ========================================
+   GENERAL PAGE STYLING
+   Element selector example: body
+   ======================================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #222222;
+}
+
+
+/* ========================================
+   HEADER AND NAVIGATION
+   Element selector examples: header, nav
+   ======================================== */
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #222222;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   MAIN CONTENT
+   ======================================== */
+main {
+    padding: 30px;
+}
+
+
+/* ========================================
+   HOME PAGE
+   Class selector example: .home-section
+   ======================================== */
+.home-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.home-section img {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+
+/* ========================================
+   HOBBIES PAGE
+   ======================================== */
+.hobbies-section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hobbies-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hobby-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 35px;
+    padding: 20px;
+    background-color: white;
+
+    /* Border/shadow requirement */
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.hobby-image {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.hobby-description {
+    flex: 1;
+}
+
+
+/* ========================================
+   PROJECTS PAGE
+   ======================================== */
+.projects-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.projects-section h2 {
+    text-align: center;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+
+/* ========================================
+   RESUME PAGE
+   ======================================== */
+.resume-section {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.resume-section > h2 {
+    text-align: center;
+}
+
+.resume-category {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+
+
+/* ========================================
+   FOOTER
+   ======================================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #222222;
+}
+
+footer a {
+    color: white;
+}
+
+
+/* ========================================
+   BOOTSTRAP OVERRIDE
+   This rule will override Bootstrap's
+   default button styling later.
+   ======================================== */
+.btn-primary {
+    background-color: #222222;
+    border-color: #222222;
+}
+
+
+/* ========================================
+   MOBILE RESPONSIVENESS
+   ======================================== */
+@media (max-width: 700px) {
+    .hobby-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hobby-image {
+        width: 100%;
+        height: auto;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}
